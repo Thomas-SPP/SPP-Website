@@ -1,10 +1,168 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my homepage, created with index.html.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saskatchewan Prosperity Project</title>
+  <style>
+    /* Add your CSS styling here, or paste styles from the React version */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f7;
+      color: #263238;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav {
+      background: #fff;
+      border-bottom: 4px solid #137333;
+      box-shadow: 0 2px 8px rgba(34,46,54,0.08);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+    nav a {
+      color: #137333;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 18px;
+      font-size: 1.25em;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffd600;
+    }
+    .hero {
+      background: linear-gradient(120deg, #137333 0%, #54c274 100%);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px 60px 20px;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 25px;
+    }
+    section {
+      max-width: 950px;
+      margin: 0 auto 35px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(100, 100, 100, 0.07);
+      padding: 32px 24px;
+    }
+    h2 {
+      color: #137333;
+      font-size: 2.1em;
+      border-bottom: 2px solid #ffd600;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contact-section {
+      background: #137333;
+      color: #fff;
+    }
+    .contact-section a {
+      color: #ffd600;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #263238;
+      color: #d8eecc;
+      text-align: center;
+      padding: 25px 0;
+      border-top: 3px solid #ffd600;
+    }
+    @media (max-width: 700px) {
+      section { padding: 18px 5px; }
+      .hero h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
+      <a href="#initiatives">Initiatives</a>
+      <a href="#signup">Sign Up</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <h1>Saskatchewan Prosperity Project</h1>
+    <p>Reclaiming our autonomy, defending our resources, and securing Saskatchewan’s future on our own terms.</p>
+    <a href="#about" style="background: #ffd600; color: #137333; font-weight: bold; padding: 10px 40px; border-radius: 7px; box-shadow: 0 2px 6px rgba(0,0,0,0.14); font-size: 1.2em;">Stand With Us</a>
+  </section>
+
+  <section id="about">
+    <h2>About SPP</h2>
+    <p>
+      The Saskatchewan Prosperity Project stands for provincial autonomy, resource sovereignty, and economic freedom. We believe Saskatchewan has been overlooked for too long, and it's time we took control of our own destiny. Through grassroots advocacy and community mobilization, we fight against federal overreach and promote policies that put Saskatchewan first.
+    </p>
+  </section>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <ul>
+      <li><strong>Resource Sovereignty:</strong> Assert Saskatchewan’s right to develop and profit from our resources, free from punitive federal policies.</li>
+      <li><strong>Provincial Autonomy:</strong> Defend Saskatchewan’s authority and push back against overreach that threatens our way of life.</li>
+      <li><strong>Citizen Power:</strong> Build a strong coalition united in taking the future into our own hands.</li>
+    </ul>
+  </section>
+
+  <section id="initiatives">
+    <h2>Our Initiatives</h2>
+    <ul>
+      <li><strong>Constitutional Rights:</strong> Advocacy for Saskatchewan’s control over resources and trade.</li>
+      <li><strong>Energy Independence:</strong> Fighting to develop oil, gas, potash, and uranium sectors free from barriers.</li>
+      <li><strong>Fiscal Fairness:</strong> Standing up for equitable treatment and keeping more of what we earn.</li>
+      <li><strong>Community Mobilization:</strong> Organizing town halls, rallies, and campaigns for the province’s future.</li>
+    </ul>
+  </section>
+
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <p>Stay informed about Saskatchewan’s fight for sovereignty and economic freedom:</p>
+    <form>
+      <input type="text" placeholder="First Name" required/><br><br>
+      <input type="text" placeholder="Last Name" required/><br><br>
+      <input type="email" placeholder="Email Address" required/><br><br>
+      <button type="submit" style="background: #137333; color: #fff; font-weight:bold; padding:10px 30px; border-radius: 6px; border: none;">Sign Up</button>
+    </form>
+  </section>
+
+  <section id="volunteer">
+    <h2>Volunteer With Us</h2>
+    <p>Contribute your skills and expertise to our cause—help defend Saskatchewan’s autonomy.</p>
+    <form>
+      <input type="text" placeholder="First Name" required/><br><br>
+      <input type="text" placeholder="Last Name" required/><br><br>
+      <input type="email" placeholder="Email Address" required/><br><br>
+      <input type="text" placeholder="Phone Number (Optional)"/><br><br>
+      <textarea placeholder="Tell us why you're passionate..." rows="4" style="width:98%;"></textarea><br><br>
+      <button type="submit" style="background: #ffd600; color: #137333; font-weight:bold; padding:10px 30px; border-radius: 6px; border: none;">Join the Fight</button>
+    </form>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Take Action</h2>
+    <p>Ready to defend Saskatchewan’s sovereignty? Connect with us and be part of a movement that refuses to back down.</p>
+    <p>Email: <a href="mailto:info@saskprosperity.ca">info@saskprosperity.ca</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Saskatchewan Prosperity Project. Standing strong for our province.
+  </footer>
+</body>
 </html>
