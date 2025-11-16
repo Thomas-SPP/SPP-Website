@@ -1,9 +1,3 @@
-Here’s your entire SPP website in a single HTML file. This is a static version—no advanced React features, but everything is HTML and CSS so it works with GitHub Pages or any simple web host.
-
-Just copy the code below and save it as `index.html`.  
-You can customize further or let me know what tweaks you want.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,16 +12,21 @@ You can customize further or let me know what tweaks you want.
     nav a:hover {color: #ffd600;}
     .hero { background: linear-gradient(to bottom right, #206a2e, #537a53 60%, #222e36 100%); padding: 48px 24px; color:#fff; text-align:center;}
     .hero .cta { display:inline-block; margin-top:24px; background:#ffd600; color:#263238; font-weight:700; padding:18px 40px; border-radius:8px; text-decoration:none;}
-    section { background: #fff; margin: 32px 0; padding: 32px 18px; border-radius: 10px; box-shadow: 0 1px 10px #26323822;}
-    h2 { color: #537a53; border-bottom:2px solid #9ed568; padding-bottom:6px;}
-    ul {padding-left:24px;}
+    section { background: #fff; margin: 32px 0; padding: 32px 18px; border-radius: 10px; box-shadow: 0 1px 10px #26323822; text-align: center;}
+    h2 { color: #537a53; border-bottom:2px solid #9ed568; padding-bottom:6px; }
+    ul { padding-left: 0; display: inline-block; text-align: left; margin: 0 auto; }
     .contact { background: #f9fff2; border-left: 6px solid #9ed568;}
-    input, textarea, select { width:100%; border-radius:7px; font-size:1.1em; border:2px solid #dbe5de; margin: 2px 0 12px 0; padding:7px;}
-    label { font-weight: bold; display:block; margin-top:8px;}
+    input, textarea, select { width:60%; min-width: 160px; border-radius:7px; font-size:1.1em; border:2px solid #dbe5de; margin: 2px 0 12px 0; padding:7px; display: block; margin-left: auto; margin-right: auto;}
+    label { font-weight: bold; display:block; margin-top:8px; text-align: center;}
     button { background: #206a2e; color:#fff; border:none; border-radius: 7px; padding:12px 28px; font-size:1em; font-weight:bold; cursor:pointer; margin-top:8px;}
     button:hover { background: #537a53;}
     footer { text-align:center; background: #222e36; color:#9ed568; padding:36px 12px; border-top:2px solid #ffd600; border-radius:0 0 10px 10px;}
-    @media (max-width:700px) { section,header,nav,footer { max-width:100%; padding:12px; } .hero{padding:32px 10px;} }
+    @media (max-width:700px) { 
+      section,header,nav,footer { max-width:100%; padding:12px; }
+      .hero{padding:32px 10px;}
+      input, textarea, select { width:100%; }
+      ul { width:100%; }
+    }
   </style>
 </head>
 <body>
@@ -138,13 +137,3 @@ You can customize further or let me know what tweaks you want.
   </footer>
 </body>
 </html>
-```
-
-**Instructions:**
-- Save this as `index.html`.
-- Upload to the root of your repository for GitHub Pages (not inside any folder).
-- That’s it—your site will go live!
-
-Let me know if you need adjustments or want advanced features added!
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/145908343/fa5151d6-470e-4e7c-9a10-df7ba1720791/spp-website.tsx)
