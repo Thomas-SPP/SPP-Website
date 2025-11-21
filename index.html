@@ -1,139 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-CA">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saskatchewan Prosperity Project</title>
+  <meta name="description" content="Building shared prosperity across Saskatchewan through collaboration, evidence, and action.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f7; color: #263238; margin: 0;}
-    header, nav, section, footer { max-width: 900px; margin: 0 auto; }
-    nav {background: #222e36; color:#fff; padding: 12px 0; text-align: center;}
-    nav a {color: #9ed568; margin: 0 12px; text-decoration: none; font-weight: bold;}
-    nav a:hover {color: #ffd600;}
-    .hero { background: linear-gradient(to bottom right, #206a2e, #537a53 60%, #222e36 100%); padding: 48px 24px; color:#fff; text-align:center;}
-    .hero .cta { display:inline-block; margin-top:24px; background:#ffd600; color:#263238; font-weight:700; padding:18px 40px; border-radius:8px; text-decoration:none;}
-    section { background: #fff; margin: 32px 0; padding: 32px 18px; border-radius: 10px; box-shadow: 0 1px 10px #26323822; text-align: center;}
-    h2 { color: #537a53; border-bottom:2px solid #9ed568; padding-bottom:6px; }
-    ul { padding-left: 0; display: inline-block; text-align: left; margin: 0 auto; }
-    .contact { background: #f9fff2; border-left: 6px solid #9ed568;}
-    input, textarea, select { width:60%; min-width: 160px; border-radius:7px; font-size:1.1em; border:2px solid #dbe5de; margin: 2px 0 12px 0; padding:7px; display: block; margin-left: auto; margin-right: auto;}
-    label { font-weight: bold; display:block; margin-top:8px; text-align: center;}
-    button { background: #206a2e; color:#fff; border:none; border-radius: 7px; padding:12px 28px; font-size:1em; font-weight:bold; cursor:pointer; margin-top:8px;}
-    button:hover { background: #537a53;}
-    footer { text-align:center; background: #222e36; color:#9ed568; padding:36px 12px; border-top:2px solid #ffd600; border-radius:0 0 10px 10px;}
-    @media (max-width:700px) { 
-      section,header,nav,footer { max-width:100%; padding:12px; }
-      .hero{padding:32px 10px;}
-      input, textarea, select { width:100%; }
-      ul { width:100%; }
+    :root{
+      --gold:#D5A021; --green:#1F5D44; --sky:#4FA3D1;
+      --charcoal:#2B2B2B; --warm:#F5F3EF; --max:72rem;
     }
+    *{box-sizing:border-box} body{margin:0;font-family:"Source Sans 3",system-ui;background:var(--warm);color:var(--charcoal);line-height:1.6}
+    header{background:var(--green);color:#fff}
+    .wrap{max-width:var(--max);margin:0 auto;padding:1rem 1.5rem}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    nav a{color:#fff;text-decoration:none;margin:0 .75rem}
+    .brand{font-family:Inter;font-weight:700;letter-spacing:.2px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:3rem 1.5rem}
+    h1{font-family:Inter;font-weight:700;font-size:2.2rem;margin:.25rem 0}
+    .cta{display:flex;gap:1rem;margin-top:1rem}
+    .btn{padding:.75rem 1rem;border-radius:.5rem;font-weight:600;border:none;cursor:pointer}
+    .primary{background:var(--gold);color:#111}
+    .ghost{background:transparent;color:#fff;border:2px solid #fff}
+    section{padding:2rem 1.5rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+    .card{background:#fff;border-radius:.75rem;box-shadow:0 4px 14px rgba(0,0,0,.08);padding:1.25rem}
+    footer{background:#111;color:#ddd}
+    footer a{color:#ddd}
+    @media (max-width:800px){ .hero{grid-template-columns:1fr} }
+    a:focus,button:focus{outline:3px solid var(--sky);outline-offset:2px}
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#mission">Mission</a>
-    <a href="#initiatives">Initiatives</a>
-    <a href="#signup">Sign Up</a>
-    <a href="#volunteer">Volunteer</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <header class="hero" id="home">
-    <h1 style="font-size:2.7em;">Saskatchewan Prosperity Project</h1>
-    <p style="font-size:1.36em;">Reclaiming our autonomy, defending our resources, and securing Saskatchewan’s future on our own terms.</p>
-    <a class="cta" href="#about">Stand With Us</a>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Primary">
+        <div class="brand">Saskatchewan Prosperity Project</div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#initiatives">Initiatives</a>
+          <a href="#impact">Impact</a>
+          <a href="#resources">Resources</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero wrap">
+        <div>
+          <h1>Building shared prosperity in Saskatchewan</h1>
+          <p>We connect communities, businesses, and policymakers to grow good jobs, inclusive entrepreneurship, and resilient regions.</p>
+          <div class="cta">
+            <a class="btn primary" href="#get-involved">Get involved</a>
+            <a class="btn ghost" href="#initiatives">Explore initiatives</a>
+          </div>
+        </div>
+        <img src="hero.jpg" alt="Community gathering in Saskatchewan" style="width:100%;border-radius:.75rem">
+      </div>
+    </div>
   </header>
-  <section id="about">
-    <h2>About SPP</h2>
-    <p>
-      The Saskatchewan Prosperity Project stands for provincial autonomy, resource sovereignty, and economic freedom. We believe Saskatchewan has been overlooked for too long, and it’s time we took control of our own destiny. Our province has the resources, the people, and the determination to chart our own course.
-    </p>
-    <p>
-      Through grassroots advocacy, policy research, and community mobilization, we fight against federal overreach and promote policies that put Saskatchewan first. From resource development to interprovincial trade, fiscal fairness to constitutional rights, we’re building a movement that refuses to be ignored.
-    </p>
-  </section>
-  <section id="mission">
-    <h2>Our Mission</h2>
-    <ul>
-      <li><b>Resource Sovereignty:</b> Assert Saskatchewan's constitutional right to develop and profit from our own natural resources without federal interference.</li>
-      <li><b>Provincial Autonomy:</b> Defend Saskatchewan’s jurisdictional authority and push back against federal overreach.</li>
-      <li><b>Citizen Power:</b> Build a coalition of Saskatchewan citizens, businesses, and communities to take our future into our own hands.</li>
-    </ul>
-  </section>
-  <section id="initiatives">
-    <h2>Our Initiatives</h2>
-    <ul>
-      <li><b>Constitutional Rights:</b> Researching and advocating for Saskatchewan’s authority over resources and trade.</li>
-      <li><b>Energy Independence:</b> Fighting for the right to develop oil, gas, potash, and uranium sectors, free from federal controls.</li>
-      <li><b>Fiscal Fairness:</b> Demanding equitable federal transfers and keeping more of what we earn.</li>
-      <li><b>Community Mobilization:</b> Organizing town halls, rallies, and campaigns so Saskatchewan voices are heard nationwide.</li>
-    </ul>
-  </section>
-  <section id="signup">
-    <h2>Sign Up</h2>
-    <p>Stay informed about Saskatchewan’s fight for sovereignty and economic freedom.</p>
-    <form>
-      <label for="signup-first">First Name</label>
-      <input id="signup-first" type="text" placeholder="Enter your first name">
-      <label for="signup-last">Last Name</label>
-      <input id="signup-last" type="text" placeholder="Enter your last name">
-      <label for="signup-email">Email Address</label>
-      <input id="signup-email" type="email" placeholder="your.email@example.com">
-      <label for="signup-phone">Phone Number (Optional)</label>
-      <input id="signup-phone" type="tel" placeholder="306 555-0123">
-      <label>Priority Issues</label>
-      <input type="checkbox" id="issue1"><label for="issue1" style="display:inline;">Resource Sovereignty / Energy Independence</label><br>
-      <input type="checkbox" id="issue2"><label for="issue2" style="display:inline;">Provincial Autonomy / Constitutional Rights</label><br>
-      <input type="checkbox" id="issue3"><label for="issue3" style="display:inline;">Fiscal Fairness / Equalization</label><br>
-      <input type="checkbox" id="issue4"><label for="issue4" style="display:inline;">Agricultural Freedom / Property Rights</label><br>
-      <button type="submit">Stand With Saskatchewan</button>
-    </form>
-  </section>
-  <section id="volunteer">
-    <h2>Volunteer With Us</h2>
-    <p>Actively fight for Saskatchewan's sovereignty. Share your skills and expertise to defend our province.</p>
-    <form>
-      <label for="vol-first">First Name</label>
-      <input id="vol-first" type="text" placeholder="Enter your first name">
-      <label for="vol-last">Last Name</label>
-      <input id="vol-last" type="text" placeholder="Enter your last name">
-      <label for="vol-email">Email Address</label>
-      <input id="vol-email" type="email" placeholder="your.email@example.com">
-      <label for="vol-phone">Phone Number</label>
-      <input id="vol-phone" type="tel" placeholder="306 555-0123">
-      <label>Your Skills and Expertise</label>
-      <input type="checkbox" id="skill1"><label for="skill1" style="display:inline;">Communications / Media Relations</label><br>
-      <input type="checkbox" id="skill2"><label for="skill2" style="display:inline;">Policy Research / Analysis</label><br>
-      <input type="checkbox" id="skill3"><label for="skill3" style="display:inline;">Event Organization / Rallies</label><br>
-      <input type="checkbox" id="skill4"><label for="skill4" style="display:inline;">Digital Strategy / Web Development</label><br>
-      <input type="checkbox" id="skill5"><label for="skill5" style="display:inline;">Graphic Design / Content Creation</label><br>
-      <input type="checkbox" id="skill6"><label for="skill6" style="display:inline;">Legal / Constitutional Expertise</label><br>
-      <input type="checkbox" id="skill7"><label for="skill7" style="display:inline;">Business / Economic Analysis</label><br>
-      <input type="checkbox" id="skill8"><label for="skill8" style="display:inline;">Community Organizing / Canvassing</label><br>
-      <input type="checkbox" id="skill9"><label for="skill9" style="display:inline;">Public Speaking / Advocacy</label><br>
-      <input type="checkbox" id="skill10"><label for="skill10" style="display:inline;">Fundraising / Campaign Management</label><br>
-      <label for="vol-availability">Availability</label>
-      <select id="vol-availability">
-        <option value="">Select your availability</option>
-        <option value="1-5">1-5 hours per week</option>
-        <option value="5-10">5-10 hours per week</option>
-        <option value="10-20">10-20 hours per week</option>
-        <option value="20+">20+ hours per week</option>
-        <option value="flexible">Flexible/Project-based</option>
-      </select>
-      <label for="vol-why">Why Saskatchewan Matters to You</label>
-      <textarea id="vol-why" rows="3" placeholder="Tell us why you're passionate about defending Saskatchewan's autonomy and what you hope to contribute..."></textarea>
-      <button type="submit">Join the Fight</button>
-    </form>
-  </section>
-  <section id="contact" class="contact">
-    <h2>Take Action</h2>
-    <p>Ready to defend Saskatchewan’s sovereignty? Connect with us and be part of a movement that refuses to back down.</p>
-    <p>Email: <a href="mailto:info@saskprosperity.ca">info@saskprosperity.ca</a></p>
-  </section>
+
+  <main>
+    <section id="initiatives" class="wrap">
+      <h2>Key initiatives</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Workforce & skills</h3>
+          <p>Upskilling pathways with employers across the province for in‑demand roles.</p>
+        </article>
+        <article class="card">
+          <h3>Entrepreneurship & SMEs</h3>
+          <p>Mentorship, micro‑grants, and market access for founders in urban and rural communities.</p>
+        </article>
+        <article class="card">
+          <h3>Regional development</h3>
+          <p>Community‑led projects that strengthen local economies beyond major centers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="impact" class="wrap">
+      <h2>Impact</h2>
+      <div class="grid">
+        <div class="card"><strong>2,300+</strong> participants supported</div>
+        <div class="card"><strong>180+</strong> businesses coached</div>
+        <div class="card"><strong>35</strong> communities engaged</div>
+      </div>
+    </section>
+
+    <section id="get-involved" class="wrap">
+      <h2>Get involved</h2>
+      <p>Volunteer, partner, or donate to help expand opportunity across Saskatchewan.</p>
+      <a class="btn primary" href="volunteer.html">Volunteer</a>
+      <a class="btn" href="partner.html" style="background:#fff;border:2px solid #111">Partner</a>
+    </section>
+
+    <section id="resources" class="wrap">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="#">Starting a business in SK</a></li>
+        <li><a href="#">Workforce training programs</a></li>
+        <li><a href="#">Grant writing toolkit</a></li>
+      </ul>
+    </section>
+
+    <section id="news" class="wrap">
+      <h2>News</h2>
+      <article class="card">
+        <h3>Q4 program cohort announced</h3>
+        <p>Applications open for regional entrepreneurship support and workforce training.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <p>Based in Regina, Saskatchewan. Reach out for partnerships, media, or general inquiries.</p>
+      <form action="#" method="post">
+        <label>Name <input type="text" name="name" required></label><br>
+        <label>Email <input type="email" name="email" required></label><br>
+        <label>Message <textarea name="message" rows="4" required></textarea></label><br>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
   <footer>
-    &copy; 2025 Saskatchewan Prosperity Project. Standing strong for our province.
+    <div class="wrap">
+      <p>&copy; Saskatchewan Prosperity Project. All rights reserved.</p>
+      <p><a href="#">Privacy</a> • <a href="#">Accessibility</a> • <a href="#">Terms</a></p>
+    </div>
   </footer>
 </body>
 </html>
